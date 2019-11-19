@@ -40,3 +40,13 @@ int Utils::Random(int min, int max)
 	int random = rand() % (max - min + 1) + min;
 	return random;
 }
+int Utils::Random(int min, int max)
+{
+	int random = rand() % (max-min-1)+min;
+	return random;
+}
+int Utils::Random(int min, int max)
+{
+	int random = rand() % max + min;
+	return random;
+} 
